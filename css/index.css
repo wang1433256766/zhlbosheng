@@ -86,7 +86,7 @@ body{
 .zhuanqu ul{
 	width: 1200px;
 	list-style: none;
-	margin: 30px auto;
+	margin: 60px auto;
 	text-align: center;
 }
 .zhuanqu ul li{
@@ -106,8 +106,9 @@ body{
 }
 
 .zhuanqu ul li .zhuanqu-title{
-	display: block;
-	font-family: 新宋体;
+	/*display: block;*/
+	display: none;
+	/*font-family: 新宋体;*/
 	font-weight: bolder;
 	font-size: 20px;
 	color: #3f3f3f;
@@ -117,35 +118,62 @@ body{
 }
 
 .zhuanqu ul li .hover-block{
-	display: none;
+	/*display: none;*/
+	display: block;
 	padding: 0 15px;
 	text-align: left;
 	height: 108px;
-	border-bottom: 2px solid #4ca12e;
-	box-shadow: 2px 2px 20px #cccccc;
-
+	/*border-bottom: 2px solid #4ca12e;*/
+	/*box-shadow: 2px 2px 20px #cccccc;*/
 }
 
 .zhuanqu ul li .hover-block p:first-child{
-	font-family: 新宋体;
+	/*font-family: 新宋体;*/
 	font-weight: bolder;
 	font-size: 20px;
-	color: #4ca12e;
+	color: #3f3f3f;
+	/*color: #4ca12e;*/
 	line-height: 45px;
 }
 
-.zhuanqu ul li .hover-block p:last-child{
+.zhuanqu ul li .hover-block p:nth-child(2){
 	font-size: 14px;
 	color: #999999;
+	opacity: 0;
 }
 
-.zhuanqu ul li:hover .zhuanqu-title{
-	display: none;
+.zhuanqu ul li .hover-block .hx{
+	opacity: 0;
+	width: 0;
+	margin-left: -15px;
+	margin-top: 24px;
+	border: 0;
+	height: 3px;
+	background: #4ca12e;
+	transition: width 2s;
+	-moz-transition: width 2s;	/* Firefox 4 */
+	-webkit-transition: width 2s;	/* Safari 和 Chrome */
+	-o-transition: width 2s;	/* Opera */
 }
+
+/*.zhuanqu ul li:hover .zhuanqu-title{
+	display: none;
+}*/
 
 .zhuanqu ul li:hover .hover-block{
-	display: block;
+	/*display: block;*/
+	box-shadow: 2px 2px 20px #cccccc;
 } 
+.zhuanqu ul li:hover .hover-block p:first-child{
+	color: #4ca12e;
+}
+.zhuanqu ul li:hover .hover-block p:nth-child(2){
+	opacity: 1;
+}
+.zhuanqu ul li:hover .hover-block .hx{
+	width: 375px;
+	opacity: 1;
+}
 
 /*走进博盛*/
 .into-bosheng{
@@ -297,6 +325,11 @@ body{
 	padding: 2px 12px;
 	text-transform: uppercase;
 }
+.tuozhan .detail a:hover{
+	border: 1px solid #4ca12e;
+	background: #4ca12e;
+	color: #fff;
+}
 
 /*商务会议*/
 .meet{
@@ -330,12 +363,15 @@ body{
 	height: 412px;
 	vertical-align: top;
 }
+.meet ul li a{
+	text-decoration: none;
+}
 .meet ul li img{
 	display: block;
 	width: 306px;
 	height: 206px;
 }
-.meet ul li .meet-discrib{
+.meet ul li a .meet-discrib{
 	display: block;
 	width: 306px;
 	height: 206px;
@@ -343,18 +379,18 @@ body{
 	color: #444;
 	padding: 30px 24px;
 }
-.meet ul li .meet-discrib p{
+.meet ul li a .meet-discrib p{
 	font-size: 14px;
 	text-align: left;
 	line-height: 22px;
 }
 
-.meet ul li .meet-discrib p:first-child{
+.meet ul li a .meet-discrib p:first-child{
 	font-weight: bolder;
 	font-size: 16px;
 	line-height: 45px;
 }
-.meet ul li:hover .meet-discrib{
+.meet ul li:hover a .meet-discrib{
 	background: #4ca12e;
 	color: #fff;
 }
@@ -659,7 +695,7 @@ body{
 
 .fix_kefu .fix_kefu_nav .kefu_tel a{
 	display: block;
-	border: 1px solid #444;
+	border: 1px solid #387a21;
 	border-bottom: 0;
 	width: 100px;
 	height: 50px;
@@ -670,8 +706,10 @@ body{
 	font-size: 12px;
 	
 }
-.fix_kefu .fix_kefu_nav .kefu_bindweixin,
-.fix_kefu .fix_kefu_nav .kefu_qq{
+.fix_kefu .fix_kefu_nav .kefu_bindweixin a,
+.fix_kefu .fix_kefu_nav .kefu_qq a{
+	display: block;
+	text-decoration: none;
 	background: #4ca12e;
 	width: 100px;
 	height: 50px;
@@ -679,7 +717,7 @@ body{
 	text-align: center;
 	color: #fff;
 	font-size: 12px;
-	border: 1px solid #444;
+	border: 1px solid #387a21;
 	border-bottom: 0;
 }
 .fix_kefu .fix_kefu_nav .back{
@@ -709,15 +747,21 @@ body{
 	color: #fff;
 	text-align: center;
 	top: 120px;
-	border: 1px solid #444;
+	border: 1px solid #387a21;
 	border-right: 0;
 	display: none;
 }
-.fix_kefu  .kefu_none .kefu_tel:hover{
-	display: block;
-}
-.fix_kefu .fix_kefu_nav .kefu_tel a:hover{
-	border-left: 0;
+.fix_kefu .kefu_none .kefu_weixin{
+	position: absolute;
+	margin-left: 10px;
+	width: 120px;
+	height: 120px;
+	background: #4ca12e;
+	top: 170px;
+	border: 1px solid #387a21;
+	border-right: 0;
+	padding: 10px;
+	display: none;
 }
 
 
