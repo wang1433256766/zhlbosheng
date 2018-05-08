@@ -1,0 +1,140 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑",Arial;
+}
+.wrap{
+	margin: 0 auto;
+	max-width: 1920px;
+	min-width: 1200px;
+}
+
+/*主体*/
+.main{
+	width: 100%;
+	min-width: 1200px;
+	margin: 0 auto;
+}
+
+/*悬浮客服*/
+.fix_kefu{
+	position: fixed;
+	z-index: 999;
+	right: 10px;
+	top: 30%;
+}
+.fix_kefu:after{
+	content: '';
+	display: table;
+	clear: both;
+	zoom: 1;
+}
+.fix_kefu .fix_kefu_nav{
+	width: 100px;
+	border-radius: 10px;
+	float: right;
+	overflow: hidden;
+}
+.fix_kefu .fix_kefu_nav .kefu_weixin{
+	position: relative;
+	width: 100px;
+	height: 120px;
+	background: #387a21;
+	border-bottom: 1px solid #fff;
+}
+.fix_kefu .fix_kefu_nav .kefu_weixin img{
+	position: absolute;
+	width: 82px;
+	height: 82px;
+	top: 9px;
+	left: 9px;
+}
+.fix_kefu .fix_kefu_nav .kefu_weixin p{
+	color: #fff;
+	font-size: 12px;
+	position: absolute;
+	top: 96px;
+	left: 7.5px;
+}
+
+.fix_kefu .fix_kefu_nav .kefu_tel{
+	background: #4ca12e;
+}
+
+.fix_kefu .fix_kefu_nav .kefu_tel a{
+	display: block;
+	border: 1px solid #387a21;
+	border-bottom: 0;
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	font-size: 12px;
+	
+}
+.fix_kefu .fix_kefu_nav .kefu_bindweixin a,
+.fix_kefu .fix_kefu_nav .kefu_qq a{
+	display: block;
+	text-decoration: none;
+	background: #4ca12e;
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: #fff;
+	font-size: 12px;
+	border: 1px solid #387a21;
+	border-bottom: 0;
+}
+.fix_kefu .fix_kefu_nav .back{
+	background: #387a21;
+}
+.fix_kefu .fix_kefu_nav .back a{
+	display: block;
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	font-size: 12px;
+	border-top: 1px solid #fff;
+}
+.fix_kefu  .kefu_none{
+	width: 130px;
+	float: left;
+}
+.fix_kefu  .kefu_none .kefu_tel{
+	position: absolute;
+	width: 130px;
+	height: 51px;
+	line-height: 51px;
+	background: #4ca12e;
+	color: #fff;
+	text-align: center;
+	top: 120px;
+	border: 1px solid #387a21;
+	border-right: 0;
+	display: none;
+}
+.fix_kefu .kefu_none .kefu_weixin{
+	position: absolute;
+	margin-left: 10px;
+	width: 120px;
+	height: 120px;
+	background: #4ca12e;
+	top: 170px;
+	border: 1px solid #387a21;
+	border-right: 0;
+	padding: 10px;
+	display: none;
+}

@@ -1,0 +1,114 @@
+.img-show{
+	width: 100%;
+	height: 300px;
+	background: url('../images/public_show.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.breadcard{
+	margin: 0 auto;
+	width: 1200px;
+	height: 45px;
+	line-height: 45px;
+	color: #999999;
+}
+.hx{
+	width: 100%;
+	height: 2px;
+	border: 0;
+	background: #999999;
+}
+.content-box{
+	width: 1200px;
+	margin: 0 auto;
+	padding: 25px 0 150px;
+}
+.content-box:after{
+	content: '';
+	display: table;
+	clear: both;
+	zoom: 1;
+}
+.content-box .slider{
+	float: left;
+	width: 260px;
+}
+.content-box .content-main{
+	float: right;
+	width: 890px;
+}
+.content-box .slider .about{
+	width: 100%;
+	height: 65px;
+	line-height: 65px;
+	background: url(../images/in_bosheng_slider_bg.png);
+	color: #fff;
+	font-weight: bolder;
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 2px;
+}
+.content-box .slider .about span{
+	text-transform: uppercase;
+	font-weight: normal;
+}
+.content-box .slider .first-ul,.content-box .slider .last-ul{
+	list-style: none;
+}
+.content-box .slider .first-ul li a{
+	display: block;
+	width: 260px;
+	height: 35px;
+	line-height: 35px;
+	background: #4ca12e;
+	border-top: 1px solid #fff;
+	color: #fff;
+	font-size: 14px;
+	text-decoration: none;
+	padding: 0 40px;
+}
+.content-box .slider .first-ul li a span{
+	float: right;
+}
+.content-box .slider .first-ul li.active a,.content-box .slider .first-ul li a:hover{
+	background: #387a21;
+}
+.content-box .slider .last-ul{
+	margin-top: 8px;
+}
+.content-box .slider .last-ul li{
+	color: #fff;
+	height: 35px;
+	line-height: 35px;
+	font-size: 14px;
+	background: #387a21;
+	border-top: 1px solid #fff;
+	padding-left: 20px;
+}
+.content-box .slider .last-ul li img{
+	vertical-align: middle;
+	width: 19px;
+	height: 18px;
+}
+.content-box .slider .last-ul li:first-child{
+	height: 50px;
+	line-height: 50px;
+	font-weight: bolder;
+	font-size: 16px;
+}
+.content-box .content-main h3{
+	text-align: center;
+	height: 55px;
+	color: #555555;
+}
+.content-box .content-main p{
+	color: #555555;
+	font-size: 14px;
+	text-indent: 28px;
+	line-height: 25px;
+}
+.content-box .content-main img{
+	width: 890px;
+	margin: 20px 0;
+}
+

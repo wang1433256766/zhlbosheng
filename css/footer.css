@@ -1,0 +1,69 @@
+/*底部*/
+.footer{
+	width: 100%;
+	background: #313131;
+}
+.footer .footer-top{
+	margin: 0 auto;
+	width: 1200px;
+	height: 205px;
+	position: relative;
+	color: #777777;
+	font-size: 14px;
+	padding: 25px 0;
+}
+.footer .footer-top:after{
+	content: '';
+	display: table;
+	clear: both;
+	zoom: 1;
+}
+.footer .footer-top .word{
+	width: 70%;
+	float: left;
+}
+.footer .footer-top .code{
+	width: 30%;
+	float: right;
+	text-align: right;
+	margin-top: 20px;
+}
+.footer .footer-top .word p{
+	line-height: 25px;
+}
+.footer .footer-top .word p:first-child{
+	line-height: 50px;
+}
+.footer .footer-top .word p a{
+	color: #777777;
+	text-decoration: none;
+}
+.footer .footer-top .word p a:hover{
+	color: #4ca12e;
+}
+.footer .footer-top .word p span{
+	color: #4ca12e;
+}
+.footer .footer-top .code .weixin,
+.footer .footer-top .code .phone {
+    display: inline-block;
+    text-align: center;
+}
+.footer .footer-top .code .weixin p,
+.footer .footer-top .code .phone p{
+	line-height: 30px;
+}
+.footer .footer-top .weixin {
+    margin-right: 10px;
+}
+
+.footer .footer-bottom{
+	margin: 0 auto;
+	width: 1200px;
+	height: 54px;
+	line-height: 54px;
+	font-size: 14px;
+	text-align: center;
+	color: #777777;
+	border-top: 1px solid #666666;
+}
