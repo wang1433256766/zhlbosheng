@@ -21,7 +21,7 @@
 .content-box{
 	width: 1200px;
 	margin: 0 auto;
-	padding: 25px 0 150px;
+	padding: 25px 0 60px;
 }
 .content-box:after{
 	content: '';
@@ -52,7 +52,8 @@
 	text-transform: uppercase;
 	font-weight: normal;
 }
-.content-box .slider .first-ul,.content-box .slider .last-ul{
+.content-box .slider .first-ul,.content-box .slider .last-ul,
+.content-box .slider .sec-ul,.content-box .slider .third-ul{
 	list-style: none;
 }
 .content-box .slider .first-ul li a{
@@ -96,10 +97,62 @@
 	font-weight: bolder;
 	font-size: 16px;
 }
+
+.content-box .slider .sec-ul li:first-child,
+.content-box .slider .third-ul li:first-child{
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	margin-top: 8px;
+	padding-left: 20px;
+	color: #fff;
+	background: #387a21;
+	font-size: 16px;
+}
+.content-box .slider .sec-ul li a,
+.content-box .slider .third-ul li a{
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 15px;
+	background: #f8f8f8;
+	font-size: 14px;
+	color: #444;
+	border-bottom: 1px dashed #dcdcdc;
+}
+.content-box .slider .sec-ul li:nth-child(7) a,
+.content-box .slider .third-ul li:nth-child(7) a{
+	border-bottom: 1px solid #dcdcdc;
+}
+.content-box .slider .sec-ul li:last-child a,
+.content-box .slider .third-ul li:last-child a{
+	height: 46px;
+	line-height: 46px;
+	text-align: center;
+	color: #a5a5a5;
+	border-bottom: 2px solid #387a21;
+}
+
 .content-box .content-main h3{
 	text-align: center;
 	height: 55px;
 	color: #555555;
+}
+.content-box .content-main .bar{
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	background: #eeeeee;
+	color: #999999;
+	font-size: 12px;
+	margin-bottom: 30px;
+}
+.content-box .content-main .bar span{
+	display: inline-block;
+	width: 400px;
 }
 .content-box .content-main p{
 	color: #555555;
@@ -110,5 +163,26 @@
 .content-box .content-main img{
 	width: 890px;
 	margin: 20px 0;
+}
+
+.content-box .content-main .hx{
+	border: 0;
+	display: block;
+	width: 890px;
+	height: 1px;
+	background: #cccccc;
+	margin-top: 60px;
+}
+.content-box .content-main .pager{
+	width: 100%;
+	padding: 20px 0;
+}
+.content-box .content-main .pager p{
+	text-indent: 0;
+}
+.content-box .content-main .pager p a{
+	text-decoration: none;
+	font-size: 14px;
+	color: #555555;
 }
 
