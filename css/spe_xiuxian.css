@@ -148,13 +148,6 @@
 	background: #f8f8f8;
 	margin-bottom: 20px;
 }
-.content-box .content-main .title a{
-	float: right;
-	font-size: 14px;
-	color: #999999;
-	font-weight: normal;
-	text-decoration: none;
-}
 .content-box .content-main ul{
 	list-style: none;
 }
@@ -175,19 +168,6 @@
 	width: 290px;
 	text-decoration: none;
 }
-.content-box .content-main ul li a .hx_bd{
-	width: 0;
-	border: 0;
-	height: 3px;
-	background: #4ca12e;
-	transition: width 2s;
-	-moz-transition: width 2s;	/* Firefox 4 */
-	-webkit-transition: width 2s;	/* Safari 和 Chrome */
-	-o-transition: width 2s;	/* Opera */
-}
-.content-box .content-main ul li a:hover .hx_bd{
-	width: 290px;
-}
 .content-box .content-main ul li a .img{
 	width: 290px;
 	height: 192px;
@@ -205,11 +185,10 @@
 	width: 290px;
 	height: 80px;
 	padding: 0 10px;
-	border-bottom: 2px solid #eeeeee;
 }
 .content-box .content-main ul li a:hover .describ{
-	border-bottom: 0;
-	box-shadow: 0px 5px 15px #eeeeee;
+	border: 1px solid #eeeeee;
+	box-shadow: -5px 5px 15px #eeeeee;
 }
 .content-box .content-main ul li a .describ p{
 	font-size: 14px;
